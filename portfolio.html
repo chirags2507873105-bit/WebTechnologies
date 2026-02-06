@@ -1,0 +1,308 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Chirag Patil — Portfolio</title>
+  <meta name="description" content="Chirag Patil — Full‑stack MERN developer. Building scalable web apps with React, Node, Express, and MongoDB. APIs, realtime features, and production deployments." />
+
+  <!-- Bootstrap CSS (CDN) -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+
+  <style>
+    :root{--accent:#20c997;--bg:#071129;--muted:rgba(255,255,255,0.95)}
+    @media (prefers-color-scheme: light){:root{--bg:#f7fbff;--muted:#243044}}
+    html,body{height:100%}
+    body{background:linear-gradient(180deg,rgba(32,201,151,0.03),transparent),var(--bg);color:var(--muted);font-family:Inter, ui-sans-serif, system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial;padding:2rem}
+    .card-ghost{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border:1px solid rgba(255,255,255,0.05);backdrop-filter:blur(6px)}
+    .avatar{width:84px;height:84px;border-radius:18px;background:linear-gradient(135deg,#4ade80,#60a5fa);display:grid;place-items:center;font-weight:800;color:#ffffff}
+    .skill-badge{background:rgba(255,255,255,0.03);border:1px solid rgba(255,255,255,0.06);border-radius:999px;padding:.35rem .65rem;font-weight:600;color:rgba(255,255,255,0.92)}
+    .primary-gradient{background:linear-gradient(90deg,var(--accent),#7c3aed);color:#042f26;border:none}
+
+    @media (prefers-color-scheme: dark){
+      .text-muted { color: rgba(255,255,255,0.86) !important; }
+      .small.text-muted, small.text-muted { color: rgba(255,255,255,0.78) !important; }
+      .list-group-item .small.text-muted { color: rgba(255,255,255,0.74) !important; }
+      .btn-outline-light { color: rgba(255,255,255,0.95); border-color: rgba(255,255,255,0.12); }
+      footer { color: rgba(255,255,255,0.80); }
+    }
+    :root[data-bs-theme="dark"] {
+      .text-muted { color: rgba(255,255,255,0.86) !important; }
+      .small.text-muted, small.text-muted { color: rgba(255,255,255,0.78) !important; }
+      .btn-outline-light { color: rgba(255,255,255,0.95); border-color: rgba(255,255,255,0.12); }
+    }
+
+    .text-muted,
+    .nav-link.text-muted,
+    .btn-link.text-muted,
+    .small.text-muted,
+    small.text-muted {
+      color: rgba(255,255,255,0.95) !important;
+    }
+
+    .list-group-item .small.text-muted { color: rgba(255,255,255,0.86) !important; }
+
+    .btn-outline-light {
+      color: rgba(255,255,255,0.98) !important;
+      border-color: rgba(255,255,255,0.14) !important;
+      background-color: transparent !important;
+    }
+
+    article.card.card-ghost p,
+    section#about p,
+    section#work p,
+    section#contact p {
+      color: #ffffff !important;
+      opacity: 1 !important;
+    }
+
+    [style*="color:var(--muted)"] { color: rgba(255,255,255,0.95) !important; }
+
+    @media (max-width:767.98px){body{padding:1rem}}
+  </style>
+</head>
+<body>
+  <div class="container-lg">
+    <!-- Navbar -->
+    <nav class="navbar navbar-expand-md bg-transparent mb-4">
+      <div class="container-fluid p-0 align-items-center">
+        <a class="navbar-brand d-flex align-items-center gap-3 p-0" href="#">
+          <div class="avatar">CP</div>
+          <div>
+            <div class="h6 mb-0">Chirag Patil</div>
+            <div class="small text-muted">Full‑stack MERN developer • India</div>
+          </div>
+        </a>
+
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navMenu" aria-controls="navMenu" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+        </button>
+
+        <div class="collapse navbar-collapse" id="navMenu">
+          <ul class="navbar-nav ms-auto mb-2 mb-md-0 align-items-md-center">
+            <li class="nav-item"><a class="nav-link text-muted" href="#about">About</a></li>
+            <li class="nav-item"><a class="nav-link text-muted" href="#work">Work</a></li>
+            <li class="nav-item"><a class="nav-link text-muted" href="#projects">Projects</a></li>
+            <li class="nav-item"><a class="nav-link text-muted" href="#contact">Contact</a></li>
+            <li class="nav-item ms-3"><a class="btn btn-sm primary-gradient" href="#contact">Hire me</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+
+    <main class="row g-4 align-items-start">
+      <!-- Hero / About -->
+      <section id="about" class="col-12 col-lg-8">
+        <article class="card card-ghost p-4 h-100 shadow-sm">
+          <div class="d-flex justify-content-between align-items-start mb-3">
+            <div>
+              <h2 class="h4 mb-1">Hi, I’m Chirag Patil <span aria-hidden>👋</span></h2>
+              <p class="text-muted mb-0">Full‑stack MERN developer building production‑ready web applications, APIs, and realtime features.</p>
+            </div>
+            <div class="badge bg-success text-dark align-self-start">Open to work</div>
+          </div>
+
+          <p>I'm Chirag, a Full‑stack developer specialising in the MERN stack (MongoDB, Express, React, Node). I build fast, maintainable web apps and APIs that scale — from prototype to production.</p>
+
+          <p>My typical projects include single‑page React frontends, Express/Node REST APIs, JWT authentication, database modelling with MongoDB, and realtime features using WebSockets or Socket.IO. I focus on clear data flows, automated testing, and reliable deployments (Docker, CI/CD).</p>
+
+          <p>I enjoy turning ideas into polished user experiences and maintainable backend systems. Outside work I keep learning performance optimisation, cloud deployment patterns, and developer tooling.</p>
+
+          <div class="d-flex flex-wrap gap-2 mt-3">
+            <a class="btn primary-gradient" href="#contact">Get in touch →</a>
+            <a class="btn btn-outline-light" href="#projects">See projects</a>
+            <a class="btn btn-link text-muted" href="mailto:chirag.patil@example.com">✉️ Email</a>
+          </div>
+
+          <hr class="my-4">
+
+          <h3 class="h6">🚀 What I Do</h3>
+          <div class="d-flex flex-wrap gap-2 mt-2">
+            <span class="skill-badge">⚛️ React (SPA & SSR)</span>
+            <span class="skill-badge">🟢 Node.js & Express</span>
+            <span class="skill-badge">🍃 MongoDB & Mongoose</span>
+            <span class="skill-badge">🔒 Auth & JWT</span>
+            <span class="skill-badge">🔁 Realtime (Socket.IO)</span>
+            <span class="skill-badge">☁️ Deployments & Docker</span>
+          </div>
+
+          <div class="row mt-4">
+            <div class="col-12 col-md-6">
+              <h4 class="h6">🎯 Goals</h4>
+              <ul class="lh-lg">
+                <li>Build performant, user-centred web apps</li>
+                <li>Deliver production-ready backends with tests and CI</li>
+                <li>Contribute to open-source and engineer teams</li>
+                <li>Continuously improve architecture & tooling</li>
+              </ul>
+            </div>
+            <div class="col-12 col-md-6">
+              <h4 class="h6">💡 Traits</h4>
+              <ul class="lh-lg">
+                <li>Pragmatic & product-minded</li>
+                <li>Strong debugging & optimisation skills</li>
+                <li>Collaborative and documentation-focused</li>
+                <li>Fast learner who values clean code</li>
+              </ul>
+            </div>
+          </div>
+        </article>
+      </section>
+
+      <!-- Sidebar -->
+      <aside class="col-12 col-lg-4">
+        <div class="card card-ghost p-3 mb-3 shadow-sm">
+          <div class="d-flex gap-3 align-items-center">
+            <div class="avatar">CP</div>
+            <div>
+              <h3 class="h6 mb-0">Chirag Patil</h3>
+              <div class="text-muted small">Full‑stack MERN developer — India</div>
+              <div class="mt-2"><span class="badge bg-light text-dark">Open to roles</span> <small class="text-muted">• Remote & onsite</small></div>
+            </div>
+          </div>
+
+          <hr>
+          <div class="d-flex gap-2 flex-wrap">
+            <div class="flex-grow-1">
+              <div class="small text-muted">Projects</div>
+              <div class="fw-bold">10+ delivered</div>
+              <div class="small text-muted">personal & client work</div>
+            </div>
+            <div class="flex-grow-1">
+              <div class="small text-muted">Backends</div>
+              <div class="fw-bold">Node / Express</div>
+              <div class="small text-muted">REST, GraphQL, WebSockets</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="card card-ghost p-3 mb-3 shadow-sm">
+          <h4 class="h6">Selected projects</h4>
+          <div class="list-group list-group-flush mt-2" id="projects">
+            <div class="list-group-item bg-transparent border-0 p-2">
+              <div class="fw-semibold">MERN E‑commerce</div>
+              <div class="small text-muted">Product listing, cart, payments, admin dashboard; deployed with CI/CD.</div>
+            </div>
+            <div class="list-group-item bg-transparent border-0 p-2">
+              <div class="fw-semibold">Realtime Chat App</div>
+              <div class="small text-muted">Socket.IO powered chat with rooms, typing indicators, and persistence in MongoDB.</div>
+            </div>
+            <div class="list-group-item bg-transparent border-0 p-2">
+              <div class="fw-semibold">Task Manager API</div>
+              <div class="small text-muted">Express API with JWT auth, role-based access, and automated tests.</div>
+            </div>
+            <div class="list-group-item bg-transparent border-0 p-2">
+              <div class="fw-semibold">DevOps & Docker Setup</div>
+              <div class="small text-muted">Dockerised apps with GitHub Actions for build/test/deploy pipelines.</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="d-grid gap-2">
+          <a class="btn btn-outline-light" href="#contact">Contact / Hire</a>
+          <a class="btn btn-link text-muted text-start" href="#projects">View more projects</a>
+        </div>
+      </aside>
+
+      <!-- Experience -->
+      <section id="work" class="col-12">
+        <div class="card card-ghost p-4 shadow-sm">
+          <div class="d-flex justify-content-between align-items-center mb-2">
+            <h3 class="h6 mb-0">Experience & focus</h3>
+            <div class="text-muted small">MERN · APIs · Realtime · DevOps</div>
+          </div>
+
+          <div class="row mt-3">
+            <div class="col-12 col-md-8">
+              <p class="text-muted">I build full‑stack apps with React frontends and Node/Express backends. I model databases in MongoDB, implement secure authentication (JWT/OAuth), and add realtime features where needed. I prioritise test coverage, clear API contracts, and simple deployment workflows.</p>
+
+              <h4 class="h6">Tech & tools</h4>
+              <div class="d-flex gap-2 flex-wrap mt-2">
+                <span class="skill-badge">React / Next.js</span>
+                <span class="skill-badge">Node.js / Express</span>
+                <span class="skill-badge">MongoDB / Mongoose</span>
+                <span class="skill-badge">Socket.IO / WebSockets</span>
+                <span class="skill-badge">Docker • GitHub Actions</span>
+                <span class="skill-badge">REST • GraphQL</span>
+              </div>
+            </div>
+            <div class="col-12 col-md-4">
+              <div class="p-3 bg-dark bg-opacity-10 rounded">
+                <div class="small text-muted">Looking for</div>
+                <div class="fw-bold">Full‑stack roles & freelance</div>
+                <div class="small text-muted mt-2">Open to full‑time, contract, and collaborative projects where I can contribute end‑to‑end.</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Contact -->
+      <section id="contact" class="col-12">
+        <div class="card card-ghost p-4 d-flex flex-wrap gap-4 align-items-start">
+          <div class="flex-grow-1" style="min-width:260px">
+            <h3 class="h6 mb-1">Let's build something together</h3>
+            <p class="text-muted">Share a brief, connect on GitHub/LinkedIn, or email — I'll typically respond within a few days.</p>
+
+            <div class="d-flex gap-2 mt-3">
+              <a class="btn primary-gradient" href="mailto:chirag.patil@example.com">Email me</a>
+              <a class="btn btn-outline-light" href="#projects">See work</a>
+            </div>
+
+            <div class="mt-3 text-muted small">
+              <div>Quick contacts</div>
+              <div class="d-flex gap-3 mt-2">
+                <a href="#" class="text-decoration-none text-muted">🐙 GitHub</a>
+                <a href="#" class="text-decoration-none text-muted">💼 LinkedIn</a>
+                <a href="#" class="text-decoration-none text-muted">🐦 X</a>
+              </div>
+            </div>
+          </div>
+
+          <form class="p-3 bg-body-tertiary rounded" style="min-width:260px;max-width:460px;" onsubmit="event.preventDefault();alert('Replace this with your form endpoint or mailto handler');">
+            <div class="mb-2">
+              <label for="name" class="form-label small">Name</label>
+              <input id="name" name="name" class="form-control" required placeholder="Your name">
+            </div>
+            <div class="mb-2">
+              <label for="email" class="form-label small">Email</label>
+              <input id="email" name="email" type="email" class="form-control" required placeholder="you@domain.com">
+            </div>
+            <div class="mb-3">
+              <label for="message" class="form-label small">Message</label>
+              <textarea id="message" name="message" class="form-control" rows="4" required placeholder="Short message or project brief"></textarea>
+            </div>
+            <div class="d-flex gap-2">
+              <button class="btn primary-gradient" type="submit">Send message</button>
+              <a class="btn btn-outline-light" href="mailto:chirag.patil@example.com">Or email</a>
+            </div>
+          </form>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="d-flex justify-content-between align-items-center mt-4 text-muted small">
+      <div>Made with ⚡ • <strong>Chirag Patil</strong></div>
+      <div>© <span id="year"></span></div>
+    </footer>
+  </div>
+
+  <!-- Bootstrap JS bundle (Popper included) -->
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  <script>
+    // set year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // theme toggle (Bootstrap data-bs-theme) — persists to localStorage
+    const themeToggle = document.getElementById('themeToggle');
+    const saved = localStorage.getItem('site-theme');
+    if(saved) document.documentElement.dataset.bsTheme = saved;
+    themeToggle?.addEventListener('click', ()=>{
+      const next = document.documentElement.dataset.bsTheme === 'light' ? 'dark' : 'light';
+      document.documentElement.dataset.bsTheme = next;
+      localStorage.setItem('site-theme', next);
+    });
+  </script>
+</body>
+</html>
