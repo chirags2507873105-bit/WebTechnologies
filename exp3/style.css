@@ -1,0 +1,65 @@
+/* style.css - minimal custom styles for the vehicle gallery */
+
+/* Body and typography */
+body {
+  font-family: Inter, system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+  color: #222;
+  background: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Cards: subtle hover scale and shadow */
+.card-hover {
+  border: 0;
+  transition: transform 220ms ease, box-shadow 220ms ease;
+  overflow: hidden;
+  border-radius: 10px;
+}
+.card-hover .card-img-top {
+  height: 220px;
+  object-fit: cover;
+  transition: transform 300ms ease;
+}
+.card-hover:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 12px 30px rgba(20, 30, 40, 0.08);
+}
+.card-hover:hover .card-img-top {
+  transform: scale(1.03);
+}
+
+/* clickable image anchor */
+.card-img-link {
+  display: block;
+  width: 100%;
+  padding: 0;
+  text-decoration: none;
+  color: inherit;
+  cursor: pointer;
+}
+.card-img-link img {
+  width: 100%;
+  display: block;
+}
+
+/* Detail pages */
+main img.img-fluid {
+  border-radius: 10px;
+}
+
+/* Footer small text */
+footer small {
+  color: rgba(255,255,255,0.75);
+}
+
+/* Responsive tweaks */
+@media (max-width: 576px) {
+  .card-hover .card-img-top {
+    height: 180px;
+  }
+  main .container {
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+}   
